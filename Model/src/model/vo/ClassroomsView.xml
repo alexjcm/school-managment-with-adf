@@ -6,13 +6,12 @@
   Name="ClassroomsView"
   Version="12.2.1.22.48"
   InheritPersonalization="merge"
-  SelectListFlags="1"
-  FromListFlags="1"
-  WhereFlags="1"
   BindingStyle="OracleName"
   CustomQuery="false"
-  SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  SelectList="Classrooms.ROOM_NUMBER, 
+       Classrooms.GRADE_NUMBER"
+  FromList="CLASSROOMS Classrooms">
   <EntityUsage
     Name="Classrooms"
     Entity="model.eo.Classrooms"/>

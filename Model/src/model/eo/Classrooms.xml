@@ -9,7 +9,8 @@
   DBObjectType="table"
   DBObjectName="CLASSROOMS"
   AliasName="Classrooms"
-  BindingStyle="OracleName">
+  BindingStyle="OracleName"
+  xmlns:validation="http://xmlns.oracle.com/adfm/validation">
   <Attribute
     Name="RoomNumber"
     IsNotNull="true"
@@ -18,7 +19,14 @@
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
     TableName="CLASSROOMS"
-    PrimaryKey="true"/>
+    PrimaryKey="true">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="model.eo.Classrooms.RoomNumber_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <Attribute
     Name="GradeNumber"
     Precision="20"
@@ -30,6 +38,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="20"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="model.eo.Classrooms.GradeNumber_LABEL"/>
+      </SchemaBasedProperties>
+    </Properties>
   </Attribute>
   <Key
     Name="ClassroomsPk"
@@ -41,4 +55,17 @@
       <Item Value="model.eo.Classrooms.RoomNumber"/>
     </AttrArray>
   </Key>
+  <validation:UniqueKeyValidationBean
+    Name="ClassroomsRule0"
+    ResId="model.eo.Classrooms_Rule_0"
+    KeyName="ClassroomsPk">
+    <validation:OnAttributes>
+      <validation:Item
+        Value="RoomNumber"/>
+    </validation:OnAttributes>
+  </validation:UniqueKeyValidationBean>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
 </Entity>
