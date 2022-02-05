@@ -44,13 +44,27 @@
     PrecisionRule="true"
     EntityAttrName="StudentId"
     EntityUsage="Students"
-    AliasName="STUDENT_ID"/>
+    AliasName="STUDENT_ID">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="10"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentName"
     PrecisionRule="true"
     EntityAttrName="StudentName"
     EntityUsage="Students"
-    AliasName="STUDENT_NAME"/>
+    AliasName="STUDENT_NAME">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentGendar"
     PrecisionRule="true"
@@ -70,37 +84,163 @@
     PrecisionRule="true"
     EntityAttrName="StudentAddress"
     EntityUsage="Students"
-    AliasName="STUDENT_ADDRESS"/>
+    AliasName="STUDENT_ADDRESS">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentDob"
     PrecisionRule="true"
     EntityAttrName="StudentDob"
     EntityUsage="Students"
-    AliasName="STUDENT_DOB"/>
+    AliasName="STUDENT_DOB">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentParentName"
     PrecisionRule="true"
     EntityAttrName="StudentParentName"
     EntityUsage="Students"
-    AliasName="STUDENT_PARENT_NAME"/>
+    AliasName="STUDENT_PARENT_NAME">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentParentEmail"
     PrecisionRule="true"
     EntityAttrName="StudentParentEmail"
     EntityUsage="Students"
-    AliasName="STUDENT_PARENT_EMAIL"/>
+    AliasName="STUDENT_PARENT_EMAIL">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentParentPhone"
     PrecisionRule="true"
     EntityAttrName="StudentParentPhone"
     EntityUsage="Students"
-    AliasName="STUDENT_PARENT_PHONE"/>
+    AliasName="STUDENT_PARENT_PHONE">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="StudentCreatedDate"
     PrecisionRule="true"
     EntityAttrName="StudentCreatedDate"
     EntityUsage="Students"
-    AliasName="STUDENT_CREATED_DATE"/>
+    AliasName="STUDENT_CREATED_DATE">
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
+  <ViewCriteria
+    Name="SearchStudentsViewCriteria"
+    ViewObjectName="model.vo.StudentsView"
+    Conjunction="AND">
+    <Properties Name="_Props">
+      <CustomProperties>
+        <Property
+          Name="autoExecute"
+          Value="false"/>
+        <Property
+          Name="mode"
+          Value="Basic"/>
+        <Property
+          Name="allowConjunctionOverride"
+          Value="false"/>
+        <Property
+          Name="showInList"
+          Value="true"/>
+        <Property
+          Name="displayOperators"
+          Value="InAdvancedMode"/>
+      </CustomProperties>
+    </Properties>
+    <ViewCriteriaRow
+      Name="StudentsViewCriteria_row_0"
+      UpperColumns="1">
+      <ViewCriteriaItem
+        Name="StudentId"
+        ViewAttribute="StudentId"
+        Operator="="
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentName"
+        ViewAttribute="StudentName"
+        Operator="CONTAINS"
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentsViewCriteria_StudentsViewCriteria_row_0_StudentAddress"
+        ViewAttribute="StudentAddress"
+        Operator="CONTAINS"
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentsViewCriteria_StudentsViewCriteria_row_0_StudentDob"
+        ViewAttribute="StudentDob"
+        Operator="="
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentParentName"
+        ViewAttribute="StudentParentName"
+        Operator="="
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentParentEmail"
+        ViewAttribute="StudentParentEmail"
+        Operator="="
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentParentPhone"
+        ViewAttribute="StudentParentPhone"
+        Operator="="
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="StudentCreatedDate"
+        ViewAttribute="StudentCreatedDate"
+        Operator="="
+        Conjunction="AND"
+        Value=""
+        Required="Optional"/>
+    </ViewCriteriaRow>
+  </ViewCriteria>
   <ViewLinkAccessor
     Name="StudentResultView"
     ViewLink="model.vo.StudentLinkResult"
