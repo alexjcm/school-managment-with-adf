@@ -9,10 +9,10 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   PageIterMode="Full"
+  AccessMode="DEFAULT"
   SelectList="Classrooms.ROOM_NUMBER, 
        Classrooms.GRADE_NUMBER"
-  FromList="CLASSROOMS Classrooms"
-  AccessMode="DEFAULT">
+  FromList="CLASSROOMS Classrooms">
   <ViewAccessor
     Name="StaticGradeView1"
     ViewObjectName="model.staticvo.StaticGradeView"
@@ -63,4 +63,8 @@
     ViewLink="model.vo.ClassLinkStudent"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <SortCriteria>
+    <Sort
+      Attribute="RoomNumber"/>
+  </SortCriteria>
 </ViewObject>
