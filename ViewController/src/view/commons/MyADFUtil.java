@@ -75,7 +75,7 @@ public class MyADFUtil {
     public static Connection getConnection() {
         try {
             InitialContext initialContext = new InitialContext();
-            DataSource ds = (DataSource) initialContext.lookup("schoolDS");
+            DataSource ds = (DataSource) initialContext.lookup("java:comp/env/jdbc/SchoolConnectionDS");
             Connection conn = ds.getConnection();
             return conn;
         } catch (Exception e) {

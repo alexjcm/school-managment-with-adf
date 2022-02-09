@@ -119,98 +119,12 @@
       <value n="webIANAEncoding" v="UTF-8"/>
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
-      <hash n="profileDefinitions">
-         <hash n="ADFSchoolApplication_Model">
-            <value n="adflib-connectionDetails" v="true"/>
-            <hash n="archiveOptions">
-               <value n="hasManifest" v="true"/>
-            </hash>
-            <hash n="fileGroups">
-               <list n="groups">
-                  <hash>
-                     <list n="contributors">
-                        <hash>
-                           <value n="type" v="2"/>
-                        </hash>
-                        <hash>
-                           <value n="type" v="5"/>
-                        </hash>
-                     </list>
-                     <value n="displayName" v="Project Output"/>
-                     <hash n="filters">
-                        <list n="rules">
-                           <hash>
-                              <value n="pattern" v="WEB-INF/classes/**"/>
-                              <value n="type" v="1"/>
-                           </hash>
-                           <hash>
-                              <value n="pattern" v="**"/>
-                              <value n="type" v="0"/>
-                           </hash>
-                        </list>
-                     </hash>
-                     <value n="internalName" v="project-output"/>
-                     <value n="type" v="1"/>
-                  </hash>
-               </list>
-            </hash>
-            <url n="jarURL" path="deploy/ADFSchoolApplication_Model.jar"/>
-            <hash n="LibraryDependencies">
-               <list n="modulePathDependencies"/>
-            </hash>
-            <value n="profileClass" v="oracle.adfdt.common.deploy.impl.AdfLibraryProfile"/>
-            <value n="profileName" v="ADFSchoolApplication_Model"/>
-         </hash>
-         <hash n="ADFSchoolApplication_Model_adflib">
-            <value n="adflib-connectionDetails" v="true"/>
-            <hash n="archiveOptions">
-               <value n="hasManifest" v="true"/>
-            </hash>
-            <hash n="fileGroups">
-               <list n="groups">
-                  <hash>
-                     <list n="contributors">
-                        <hash>
-                           <value n="type" v="2"/>
-                        </hash>
-                        <hash>
-                           <value n="type" v="5"/>
-                        </hash>
-                     </list>
-                     <value n="displayName" v="Project Output"/>
-                     <hash n="filters">
-                        <list n="rules">
-                           <hash>
-                              <value n="pattern" v="WEB-INF/classes/**"/>
-                              <value n="type" v="1"/>
-                           </hash>
-                           <hash>
-                              <value n="pattern" v="**"/>
-                              <value n="type" v="0"/>
-                           </hash>
-                        </list>
-                     </hash>
-                     <value n="internalName" v="project-output"/>
-                     <value n="type" v="1"/>
-                  </hash>
-               </list>
-            </hash>
-            <url n="jarURL" path="deploy/ADFSchoolApplication_Model_adflib.jar"/>
-            <hash n="LibraryDependencies">
-               <list n="modulePathDependencies"/>
-            </hash>
-            <value n="profileClass" v="oracle.adfdt.common.deploy.impl.AdfLibraryProfile"/>
-            <value n="profileName" v="ADFSchoolApplication_Model_adflib"/>
-         </hash>
-      </hash>
-      <list n="profileList">
-         <string v="ADFSchoolApplication_Model_adflib"/>
-         <string v="ADFSchoolApplication_Model"/>
-      </list>
+      <hash n="profileDefinitions"/>
+      <list n="profileList"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADFSchoolApplication-Model-webapp"/>
-      <value n="j2eeWebContextRoot" v="ADFSchoolApplication-Model-context-root"/>
+      <value n="j2eeWebAppName" v="ADFSchoolApp-Model-webapp"/>
+      <value n="j2eeWebContextRoot" v="ADFSchoolApp-Model-context-root"/>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">

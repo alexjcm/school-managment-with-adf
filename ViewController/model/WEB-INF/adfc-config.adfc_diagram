@@ -236,4 +236,29 @@
       <property
          name="sdm:polyPoints">R66,311.0,409.04688,628.0,454.14062,L50</property>
    </ControlFlowCase>
+   <View
+      id="View21">
+      <property
+         name="activityId">index</property>
+      <property
+         name="x">169.5</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>index&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">655.53125</property>
+      <property
+         name="page">/index.jspx</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase22"
+      from="WildcardControlFlowRule11"
+      to="View21">
+      <property
+         name="fromOutcome">index</property>
+      <property
+         name="sdm:polyPoints">B50,275.0,441.04688,169.5,601.5469,T50</property>
+   </ControlFlowCase>
 </SDM>
