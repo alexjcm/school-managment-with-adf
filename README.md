@@ -7,18 +7,19 @@
 
 ## Installation
 
-First create a database called *school* using SQL Developer and run the sql script from the file `db_script.sql`.
+1.- First create a database called *school* using SQL Developer and then run the sql script from the file `db_script.sql`.
 
-Enter a record in the SCHOOL_INFORMATION table.
+2.- Enter a record in the SCHOOL_INFORMATION table.
 
-
-Then, clone this repository:
+3.- Then, clone this repository:
 
 ```
 git clone https://github.com/alexjcm/school-managment-with-adf.git
 ```
 
-To open the application from JDeveloper click on the **File** > **Open** menu and open the `*.jws` file of the newly cloned repository.
+4.- To open the application from JDeveloper click on the **File** > **Open** menu and open the `*.jws` file of the newly cloned repository.
+
+6.- From JDeveloper click on the menu **Window >> Database >> Databases**, then select the newly imported application and right click and select **New Connection** and create a connection called `SchoolConnection` to the *school* database.
 
 ## Deployment
 
